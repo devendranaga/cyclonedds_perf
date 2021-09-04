@@ -1,0 +1,15 @@
+module performance {
+
+struct timestamp {
+    double sec;
+    double nsec;
+};
+
+struct performance_profile {
+    uint32 sample_size;
+    uint32 n_samples;
+    timestamp t;
+    sequence<uint8> buf;
+};
+
+};
